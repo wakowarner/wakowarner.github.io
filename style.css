@@ -1,0 +1,17 @@
+*{margin:0px;padding:0px;}
+*::-moz-selection{background:#fff;color:#000;}
+*::selection{background:#fff;color:#000;}
+body{
+    width:100vw;
+    height:100vh;
+    font-family:monospace;
+    background:url("lain_laugh.gif");
+    background-size:100% 100%;
+    color:#fff;
+    text-align:center;
+}
+h2{
+    top:50%;
+    position:absolute;
+    width:100%;
+}
