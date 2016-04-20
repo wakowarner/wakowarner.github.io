@@ -1,27 +1,61 @@
 *{margin:0px;padding:0px;}
-*::-moz-selection{background:#fff;color:#000;}
-*::selection{background:#fff;color:#000;}
+*::-moz-selection{background:rgba(0,0,0,.5);color:#333;}
+*::selection{background:rgba(0,0,0,.5);color:#333;}
+a{
+	color:#fff;
+	text-decoration:none;
+}
 body{
     width:100vw;
     height:100vh;
     font-family:monospace;
-    background:url("bg.gif");
+	background:url("bg.jpg");
     background-size:100% 100%;
     color:#fff;
-    text-align:center;
+	text-align:center;
 }
 body:after{
 	width:100vw;
+	height:100vh;
 	display:block;
-	content:"Wako";
-	font-size:3.5em;
+	content:"Akko";
 	line-height:100vh;
-	text-shadow:2px 2px 1px #000;
+	font-size:25px;
+	color:#fff;
+}
+#info{
+	width:340px;
+	height:100vh;
+	background:rgba(0,0,0,.8);
+	position:absolute;
+}
+#publica{
+	font-size:8px;
+}
+#info img{
+	width:100px;
+	height:auto;
+	border-radius:100%;
+	border:5px solid #fff;
+}
+#info img::selection{
+	background:none;
 }
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 980px) {
 	body:after{
-		font-size:5em;
+		font-size:15em;
+		color:#333;
+	}
+	#info{
+		width:100vw;
+		font-size:3em;
+	}
+	#publica{
+		font-size:20px;
+	}
+	#info img{
+		width:250px;
 	}
 }
