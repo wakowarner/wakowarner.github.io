@@ -1,61 +1,205 @@
-*{margin:0px;padding:0px;}
-*::-moz-selection{background:rgba(0,0,0,.5);color:#333;}
-*::selection{background:rgba(0,0,0,.5);color:#333;}
-a{
-	color:#fff;
-	text-decoration:none;
+/*
+ *
+ * General Adjustments
+ *
+ */
+
+@font-face {
+  font-family: 'Munro';
+  src: url("fonts/Munro.ttf") format("truetype");
+  /*
+   *
+   * Font by: http://tenbytwenty.com
+   *
+   */
 }
-body{
-    width:100vw;
-    height:100vh;
-    font-family:monospace;
-	background:url("bg.jpg");
-    background-size:100% 100%;
-    color:#fff;
-	text-align:center;
+
+*{
+  margin:0px;
+  padding:0px;
+  text-transform: uppercase;
 }
-body:after{
-	width:100vw;
-	height:100vh;
-	display:block;
-	content:"Akko";
-	line-height:100vh;
-	font-size:25px;
-	color:#fff;
+
+body {
+  background: #000;
+  font-family: Munro;
 }
-#info{
-	width:340px;
-	height:100vh;
-	background:rgba(0,0,0,.8);
-	position:absolute;
+
+.no-fondo::selection {
+  background: none;
 }
-#publica{
-	font-size:8px;
+
+.no-fondo::-moz-selection {
+  background: none;
 }
-#info img{
-	width:100px;
-	height:auto;
-	border-radius:100%;
-	border:5px solid #fff;
+
+header, footer {
+  width: 100vw;
 }
-#info img::selection{
-	background:none;
+
+/*
+ *
+ * Header
+ *
+ */
+
+header {
+  background: #750c41;
 }
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 980px) {
-	body:after{
-		font-size:15em;
-		color:#333;
-	}
-	#info{
-		width:100vw;
-		font-size:3em;
-	}
-	#publica{
-		font-size:20px;
-	}
-	#info img{
-		width:250px;
-	}
+
+header h2 {
+  text-align: center;
+  font-size: 2.5em;
+  padding: 1em 0;
+  color: #fff;
+}
+
+/*
+ *
+ * Content 
+ *
+ */
+
+section {
+  color: #fff;
+  top: 20%;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  width: 70vw;
+  margin-left: 15vw;
+
+}
+
+/*
+ * 
+ * Fuck
+ * Responsive
+ * Desing
+ *
+ */
+
+@media (min-width: 1px) {
+  .secciones {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .secciones {
+    width: 50%;
+  }
+
+  #izq {
+    float: left;
+  } 
+
+  #der {
+    float: right;
+  }
+}
+
+#avatar {
+  width: 100%;
+  height: auto;
+}
+
+#avatar::selection {
+  background: #750c41;
+}
+
+#avatar::-moz-selection {
+  background: #750c41;
+}
+
+#der > *::selection {
+  background: none;
+  color: #750c41;
+}
+
+#der > *::-moz-selection {
+  background: none;
+  color: #750c41;
+}
+
+#der h3 {
+  font-size: 1.8em;
+  padding: 10px 0;
+}
+
+#der h3, #der p, #der ul {
+  margin-left: 10px;
+}
+
+#der h3::before {
+  content: "▶ ";
+  color: #750c41;
+}
+
+#der p {
+  padding-left: 30px;
+  text-align: justify;
+}
+
+#der ul {
+  list-style: square inside;
+  padding-left: 30px;
+}
+
+#der li {
+  color: #750c41;
+}
+
+#der li a {
+  color: #fff;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+#der li a:hover {
+  color: #750c41;
+  text-decoration: none;
+}
+
+#der li a::selection {
+  background: none;
+  color: #750c41;
+}
+
+#der li a::-moz-selection {
+  background: none;
+  color: #750c41;
+}
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  background: #750c41;
+}
+
+footer p {
+  text-align: center;
+  padding: 1em 5px;
+  font-weight: bold;
+  color: #fff; 
+}
+
+@media (min-width: 1px) {
+  footer p {
+    font-size: 1.9em;
+  }
+}
+
+@media (min-width: 992px) {
+  footer p {
+    font-size: 1em;
+  }
 }

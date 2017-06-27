@@ -1,72 +1,49 @@
-<!DOCTYPE HTML>
-<html manifest="wako.appcache">
+<!DOCTYPE html>
+<html manifest="akko.appcache">
 <head>
 <meta charset="utf-8">
-<title>Do you want to use a machine, or do you want the machine to use you?</title>
+<title>「私」は わたし?</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<div id="info">
-		<div id="publica">
-			-----BEGIN PGP PUBLIC KEY BLOCK-----
-			Version: GnuPG v2
+  <header>
+    <h2 class="no-fondo">アキコ</h2>
+  </header>
 
-			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
-			wFyXhlkp
-			=HaDF
-			-----END PGP PUBLIC KEY BLOCK-----
-		</div>
-		</br></br>
-		XMPP: wako[at]dukgo[dot]com</br>
-		GNU/Social: <a href="https://gs.smuglo.li/akko" target="_blank">akko[at]gs[dot]smuglo[dot]li</a></br>
-		Mail: <a href="mailto:wako@openmailbox.org">wako[at]openmailbox[dot]org</a></br>
-		</br>
-		<img src="avatar.jpg">
-	</div>
+  <section>
+    <div class="secciones" id="izq">
+      <img src="img/ukyo.gif" id="avatar" alt="Ukyo">
+    </div>
+
+    <div class="secciones" id="der">
+      <h3>
+        Likes
+      </h3>
+      <p>I like computers, *nix operating systems, programming (C++, Javascript, Ruby), technology, FOSS, anime and manga, books, comics, old videogames (Megaman, Sonic, Zelda, Bomberman), music (ambient, dream pop, future funk, punk, jazz), politics, hardware, glitch art, infosec, Internet</p>
+      <h3>
+        Links
+      </h3>
+      <ul>
+        <li>
+          <a href="https://github.com/4k1k0">GitHub</a>
+        </li>
+        <li>
+          <a href="https://gs.smuglo.li/akko">GNU/Social</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/akkonomi">Twitter</a>
+        </li>
+        <li>
+          <a href="mailto:wako@openmailbox.org">E-mail</a>
+        </li>
+      </ul>
+      </br>
+      <p>You can ask for my public key if you want</p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="no-fondo">Cigarettes and coffee</p>
+  </footer>
 </body>
 </html>
