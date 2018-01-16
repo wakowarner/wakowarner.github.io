@@ -1,0 +1,105 @@
+$enlaces : #ffd1dc;
+$texto : #333;
+$contenedor : #fff;
+$titulos : #000;
+$seleccion : #ffd1dc;
+$borde-imagen : #ffd1dc;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*::selection {
+  background: $seleccion;
+}
+*-moz-::selection {
+  background: $seleccion;
+}
+body {
+  font-family: 'Roboto Mono', monospace;
+  #cuadros-contenedor {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    .cuadro {
+      float: left;
+    }
+  }
+  #contenedor-principal {
+    width: 40%;
+    min-height: 100vh;
+    margin-left: 30%;
+    padding: 0 2rem;
+    background: $contenedor;
+    @media(max-width: 768px) {
+      width: 70%;
+      padding: 2rem 0;
+      margin-left: 15%;
+    }
+    #datos-contenedor {
+      #img-contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        img {
+          border-radius: 100%;
+          border: 1rem solid $borde-imagen;
+          width: 40%;
+          padding: 1rem;
+          @media(max-width: 768px) {
+            width: 25%;
+          }
+          @media(max-width: 414px) {
+            width: 50%;
+          }
+          height: auto;
+        }
+      }
+      #texto-contenedor {
+        padding: 1rem 0;
+        h1, h3 {
+          text-align: center;
+          color: $titulos;
+        }
+        p {
+          padding: 1rem 0;
+          color: $texto;
+          @media(max-width: 414px) {
+            padding: 1rem;
+          }
+        }
+      }
+    }
+    #links-contenedor {
+      nav {
+        @media(max-width: 768px) {
+          padding: 0 1rem;
+        }
+        ul {
+          li {
+            display: inline-block;
+            list-style: none;
+            text-align: center;
+            a {
+              display: block;
+              color: $enlaces;
+              text-decoration: none;
+              padding: 1rem 0;
+              &::selection {
+                background: $seleccion;
+                color: $contenedor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
