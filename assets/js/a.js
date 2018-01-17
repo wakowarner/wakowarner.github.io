@@ -33,7 +33,7 @@ let setBackground = () => {
     cuadros[i].style.height = (cuadroMedida + 'px');
     cuadros[i].style.backgroundColor = randomColor(230, 250);
   }
-  setTimeout(setBackground, 1000);
+  //setTimeout(setBackground, 1000);
 }
 
 setBackground();
