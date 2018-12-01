@@ -1,9 +1,9 @@
-$enlaces : #ffd1dc;
-$texto : #333;
-$contenedor : #fff;
+$fondo : #ffd1dc;
+$enlaces : #333;
 $titulos : #000;
 $seleccion : #ffd1dc;
-$borde-imagen : #ffd1dc;
+$bullets : #ddd1ff;
+$espacio: 1rem 0;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
@@ -19,87 +19,82 @@ $borde-imagen : #ffd1dc;
 }
 body {
   font-family: 'Roboto Mono', monospace;
-  #cuadros-contenedor {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -1;
-    .cuadro {
-      float: left;
+  background: url('../img/glitch_gopher.gif'), $fondo;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  @media(max-width: 768px) {
+    background-size: contain;
+  }
+  a {
+    color: $enlaces;
+  }
+  header {
+    text-align: center;
+    img {
+      height: 100px;
+      width: auto;
+      border-radius: 100%;
+      padding: 1rem 0;
     }
   }
-  #contenedor-principal {
-    width: 40%;
-    min-height: 100vh;
-    margin-left: 30%;
-    padding: 0 2rem;
-    background: $contenedor;
-    @media(max-width: 768px) {
-      width: 70%;
-      padding: 2rem 0;
-      margin-left: 15%;
-    }
-    #datos-contenedor {
-      #img-contenedor {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 1rem;
-        img {
-          border-radius: 100%;
-          border: 1rem solid $borde-imagen;
-          width: 40%;
-          padding: 1rem;
-          @media(max-width: 768px) {
-            width: 25%;
-          }
-          @media(max-width: 414px) {
-            width: 50%;
-          }
-          height: auto;
-        }
-      }
-      #texto-contenedor {
-        padding: 1rem 0;
-        h1, h3 {
-          text-align: center;
-          color: $titulos;
-        }
-        p {
-          padding: 1rem 0;
-          color: $texto;
-          @media(max-width: 414px) {
-            padding: 1rem;
-          }
-        }
+  main {
+    width: 90%;
+    margin-left: 5%;
+    section {
+      padding: $espacio;
+      h1 {
+        padding: $espacio;
       }
     }
-    #links-contenedor {
-      nav {
-        @media(max-width: 768px) {
-          padding: 0 1rem;
-        }
-        ul {
-          li {
-            display: inline-block;
-            list-style: none;
-            text-align: center;
-            a {
+    #specs {
+      h1 {
+        color: $titulos;
+      }
+      table {
+        display: block;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        tbody {
+          display: block;
+          tr {
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #000;
+            td {
               display: block;
-              color: $enlaces;
-              text-decoration: none;
-              padding: 1rem 0;
-              &::selection {
-                background: $seleccion;
-                color: $contenedor;
+              width: 100%;
+              padding: 1rem;
+              &:first-child {
+                border-right: 1px solid #000;
+              }
+              &:last-child {
+                text-align: right;
               }
             }
           }
         }
       }
     }
+    #skills {
+      #list {
+        .skill {
+          background: $bullets;
+          border-radius: 10px;
+          padding: 0.5rem 1rem;
+          margin: 0.25rem;
+          color: white;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  footer {
+    padding: $espacio;
+    width: 90%;
+    margin-left: 5%;
+    color: $enlaces;
   }
 }
