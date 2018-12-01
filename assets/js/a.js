@@ -1,39 +1,91 @@
-let windowWidth = window.innerWidth;
-let windowHeight = window.innerHeight;
-const CUADROS = 20;
-let columnas = Math.floor(windowWidth / CUADROS);
-let filas = Math.floor(windowHeight / columnas);
-
-let cuadroMedida = columnas;
-
-for ( let i = 1; i <= (filas * (columnas * CUADROS)); i++ ) {
-  document.getElementById('cuadros-contenedor').insertAdjacentHTML(
-    'afterbegin',
-    '<div class="cuadro"></div>'
-  );
-}
-
-let cuadros = document.getElementsByClassName('cuadro');
-
-let randomColor = (min, max) => {
-  if ( max > 255 || max < 0 || min > 255 || min < 0) {
-    max = 255;
-    min = 0;
+let profiles = [
+  {
+    'title': 'Twitter',
+    'url' : 'https://twitter.com/akkonomi',
+    'description': '@akkonomi'
+  },
+  {
+    'title': 'MAL',
+    'url': 'https://myanimelist.net/profile/akko_lambda',
+    'description': 'akko_lambda'
+  },
+  {
+    'title': 'Github',
+    'url': 'https://github.com/4k1k0',
+    'description': '4k1k0'
+  },
+  {
+    'title': 'Steam',
+    'url': 'https://steamcommunity.com/profiles/76561198271168645',
+    'description': 'akko_lambda'
+  },
+  {
+    'title': 'Name',
+    'description': '(W)Akko'
+  },
+  {
+    'title': 'Job',
+    'description': 'Cyber witch'
+  },
+  {
+    'title': 'Type',
+    'description': 'Ghost'
+  },
+  {
+    'title': 'Age',
+    'description': '9302 years old'
+  },
+  {
+    'title': 'Hobbies',
+    'description': 'Listening to my jams'
+  },
+  {
+    'title': 'Digimon',
+    'description': 'Wizardmon'
+  },
+  {
+    'title': 'OS',
+    'description': 'GNU/Linux, MacOs and Windows'
+  },
+  {
+    'title': 'Editor',
+    'description': 'Vim'
+  },
+  {
+    'title': 'Anilist',
+    'url': 'https://anilist.co/user/akkiko',
+    'description': 'akkiko'
+  },
+  {
+    'title': 'EVA',
+    'description': '02'
   }
-  let r = Math.floor(Math.random() * (max - min)) + min;
-  let g = Math.floor(Math.random() * (max - min)) + min;
-  let b = Math.floor(Math.random() * (max - min)) + min;
-  let bg = 'rgb(' + r + ', ' + g + ', ' + b + ')';
-  return bg;
-}
+];
 
-let setBackground = () => {
-  for ( let i = 0; i != cuadros.length; i++ ) {
-    cuadros[i].style.width = (cuadroMedida + 'px');
-    cuadros[i].style.height = (cuadroMedida + 'px');
-    cuadros[i].style.backgroundColor = randomColor(230, 250);
+
+profiles.sort( (a, b) => {
+  if ( a.title.toLowerCase() > b.title.toLowerCase() ) {
+    return 1;
+  } else {
+    return -1;
   }
-  //setTimeout(setBackground, 1000);
-}
+  return 0;
+});
 
-setBackground();
+profiles.forEach( (profile) => {
+  let element = `<tr><td>${profile.title}</td><td>${profile.description}</td></tr>`;
+  if ( profile.url !== undefined ) {
+    element = `<tr><td>${profile.title}</td><td><a href="${profile.url}" target="_blank">${profile.description}</a></td></tr>`;
+  }
+  document.getElementsByTagName('tbody')[0].insertAdjacentHTML('beforeend', element);
+});
+
+
+let skills = ['Javascript', 'Angular', 'Node.js', 'PHP', 'Linux', 'Wordpress', 'Express', 'MySQL'];
+
+skills.sort();
+
+skills.forEach( (skill) => {
+  let element = `<div class="skill">${skill}</div>`;
+  document.getElementById('list').insertAdjacentHTML('beforeend', element);
+});
