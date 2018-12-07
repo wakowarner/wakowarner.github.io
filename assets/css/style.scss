@@ -19,15 +19,7 @@ $espacio: 1rem 0;
 }
 body {
   font-family: 'Roboto Mono', monospace;
-  background-image: url('../img/glitch_gopher.gif');
   background-color: $fondo;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  @media(max-width: 768px) {
-    background-image: none;
-  }
   a {
     color: $enlaces;
   }
@@ -36,8 +28,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('../img/glitch_gopher.gif');
+    background-size: contain;
     @media(max-width: 768px) {
-      background-image: url('../img/glitch_gopher.gif');
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -48,6 +41,9 @@ body {
         width: auto;
         border-radius: 100%;
         padding: 1rem 0;
+      }
+      p {
+        color: $seleccion;
       }
     }
   }
