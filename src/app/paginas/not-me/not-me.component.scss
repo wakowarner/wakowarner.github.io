@@ -1,0 +1,22 @@
+#tabla {
+  border: 1px solid #fff;
+  margin: 1rem 0;
+  .fila {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: 1px solid #fff;
+    &:last-child {
+      border-bottom: unset;
+    }
+    .columna {
+      text-align: center;
+      padding: 0.5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:nth-child(odd) {
+        border-right: 1px solid #fff;
+      }
+    }
+  }
+}
