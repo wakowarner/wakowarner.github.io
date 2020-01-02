@@ -1,0 +1,19 @@
+picture {
+  grid-column-start: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  img {
+    width: 25%;
+    height: auto;
+    border-radius: 100%;
+    @media(max-width: 500px) {
+      width: 80%;
+    }
+  }
+}
+p {
+  grid-column-start: 2;
+  text-align: center;
+}

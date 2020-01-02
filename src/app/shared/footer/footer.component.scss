@@ -1,0 +1,8 @@
+footer {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  p {
+    grid-column-start: 2;
+    text-align: center;
+  }
+}
