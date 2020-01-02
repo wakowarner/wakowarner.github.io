@@ -3,7 +3,7 @@ picture {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   img {
     width: 25%;
     height: auto;
@@ -16,4 +16,14 @@ picture {
 p {
   grid-column-start: 2;
   text-align: center;
+}
+#info {
+  padding: 1rem 0;
+  p {
+    grid-column-start: unset;
+    span {
+      color: #f0dfaf;
+      font-weight: bolder;
+    }
+  }
 }
