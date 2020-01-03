@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AboutComponent } from './paginas/about/about.component';
 import { NotMeComponent } from './paginas/not-me/not-me.component';
+import { PastComponent } from './paginas/past/past.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NotMeComponent } from './paginas/not-me/not-me.component';
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    NotMeComponent
+    NotMeComponent,
+    PastComponent
   ],
   imports: [
     BrowserModule,
