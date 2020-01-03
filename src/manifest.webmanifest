@@ -1,7 +1,7 @@
 {
   "name": "wako",
   "short_name": "wako",
-  "theme_color": "#f2729d",
+  "theme_color": "#3c3c3c",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
