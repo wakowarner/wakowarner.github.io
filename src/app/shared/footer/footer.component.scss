@@ -1,6 +1,7 @@
 footer {
   display: grid;
   grid-template-columns: 10% 80% 10%;
+  padding-bottom: 1rem;
   p {
     grid-column-start: 2;
     text-align: center;

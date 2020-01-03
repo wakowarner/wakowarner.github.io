@@ -1,5 +1,5 @@
 export interface Social {
-  nombre: string,
-  descripcion: string,
-  url: string
+  nombre: string;
+  descripcion: string;
+  url?: string;
 }

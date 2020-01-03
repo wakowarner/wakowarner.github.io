@@ -13,7 +13,7 @@ picture {
     }
   }
 }
-p {
+h2 {
   grid-column-start: 2;
   text-align: center;
 }
@@ -21,6 +21,8 @@ p {
   padding: 1rem 0;
   p {
     grid-column-start: unset;
+    text-align: center;
+    padding-bottom: 0.5rem;
     span {
       color: #f0dfaf;
       font-weight: bolder;

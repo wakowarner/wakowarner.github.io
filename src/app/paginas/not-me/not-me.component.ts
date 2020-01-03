@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../servicios/data.service';
+import { Social } from '../../models/social.model';
 
 @Component({
   selector: 'app-not-me',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotMeComponent implements OnInit {
 
-  constructor() { }
+  specs: Social[] = [];
+
+  constructor(
+    private dataService: DataService
+  ) { }
 
   ngOnInit() {
+    this.specs = this.dataService.specs;
   }
 
 }
