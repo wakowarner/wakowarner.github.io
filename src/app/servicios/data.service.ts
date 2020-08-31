@@ -46,6 +46,15 @@ export class DataService {
       nombre: 'Redbubble',
       descripcion: '4k1k0-zyx',
       url: 'https://www.redbubble.com/es/people/4k1k0-zyx/shop'
+    },
+    {
+      nombre: 'Last.fm',
+      descripcion: 'wakogitmu',
+      url: 'https://www.last.fm/user/wakogitmu'
+    },
+    {
+      nombre: 'PSN',
+      descripcion: 'wakogitv'
     }
   ];
 
