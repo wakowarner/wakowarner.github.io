@@ -5,7 +5,7 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0;
+  padding-bottom: 0.5rem 0;
   @media(max-width: 768px) {
     grid-template-columns: 100%;
   }
@@ -13,7 +13,7 @@ main {
     width: 50%;
     border-bottom: 1px solid $verde;
     padding: 1rem 0;
-    &:last-child {
+    &:first-child, &:last-child {
       border-bottom: none;
     }
     @media(max-width: 768px) {
@@ -48,6 +48,28 @@ main {
             span {
               font-weight: 600;
             }
+          }
+        }
+      }
+    }
+    &#experience {
+      article {
+        header {
+          p {
+            display: flex;
+            h3, h4, time {
+              display: inline;
+            }
+          }
+        }
+        .keywords {
+          padding: 0.5rem 0;
+          li {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background: $verde;
+            margin: 0.25rem;
+            text-transform: lowercase;
           }
         }
       }

@@ -10,6 +10,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { AboutComponent } from './paginas/about/about.component';
 import { NotMeComponent } from './paginas/not-me/not-me.component';
 import { CvComponent } from './paginas/cv/cv.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CvComponent } from './paginas/cv/cv.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
