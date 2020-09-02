@@ -69,7 +69,7 @@ main {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         @media(max-width: 768px) {
-          grid-template-columns: 100%;
+          grid-template-columns: 50%;
         }
         li {
           margin: 0 1rem;
