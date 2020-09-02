@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 @Component({
   selector: 'app-cv',
@@ -14,6 +14,7 @@ export class CvComponent implements OnInit {
     "Apache",
     "Bash",
     "Express",
+    "Firebase",
     "Git",
     "Javascript",
     "Linux",
@@ -29,6 +30,8 @@ export class CvComponent implements OnInit {
 
   faEnvelope = faEnvelope;
   faLinkedin = faLinkedin;
+  faTwitter = faTwitter;
+  faGithub = faGithub;
 
   constructor() { }
 
