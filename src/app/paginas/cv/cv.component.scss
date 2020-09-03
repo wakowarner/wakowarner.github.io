@@ -27,6 +27,8 @@ main {
       }
       h1 {
         color: $amarillo;
+        font-size: 2rem;
+
       }
       address, article {
         margin-top: 1rem;
@@ -34,6 +36,21 @@ main {
       address {
         a {
           padding: 0.25rem 0.5rem;
+          @media(max-width: 768px) {
+            display: inline-block;
+            width: 50%;
+            font-size: 0.9rem;
+            padding: 0.25rem 0;
+            &:first-child {
+              width: 100%;
+            }
+          }
+          fa-icon {
+            color: #fff;
+            @media(max-width: 768px) {
+              font-size: 1.5rem;
+            }
+          }
         }
       }
       article {
@@ -55,18 +72,6 @@ main {
         font-size: 1rem;
         padding: 0.5rem 0;
         color: $verde;
-      }
-    }
-    article {
-      ul {
-        li {
-          list-style: none;
-          p {
-            span {
-              font-weight: 600;
-            }
-          }
-        }
       }
     }
     &#skills {
@@ -105,6 +110,27 @@ main {
             background: $verde;
             margin: 0.25rem;
             text-transform: lowercase;
+          }
+        }
+      }
+    }
+    &#foss {
+      article {
+        ul {
+          li {
+            list-style: none;
+            padding-bottom: 0.25rem;
+            display: block;
+            &:last-child {
+              padding-bottom: 0;
+            }
+            span {
+              color: $amarillo;
+              font-size: 1rem;
+              padding: 0.25rem 0;
+              padding-right: 0.5rem;
+              font-weight: 600;
+            }
           }
         }
       }
