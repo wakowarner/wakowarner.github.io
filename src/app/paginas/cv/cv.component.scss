@@ -81,17 +81,25 @@ main {
     &#skills {
       ul {
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
         @media(max-width: 768px) {
           grid-template-columns: 50% 50%;
         }
         li {
           margin: 0 1rem;
           list-style-type: none;
+          span {
+            font-size: 0.75rem;
+            @media(max-width: 768px) {
+              width: 100%;
+              display: block;
+              padding: 0.25rem 0;
+            }
+          }
         }
       }
     }
-    &#experience {
+    &#experience, &#volunteering, &#education {
       article {
         header {
           padding-bottom: 0.5rem;
@@ -116,9 +124,12 @@ main {
             text-transform: lowercase;
           }
         }
+        p {
+          padding-bottom: 0.5rem;
+        }
       }
     }
-    &#foss, &#volunteering {
+    &#foss {
       article {
         ul {
           li {
@@ -135,6 +146,16 @@ main {
               padding-right: 0.5rem;
               font-weight: 600;
             }
+          }
+        }
+      }
+    }
+    &#education, &#volunteering {
+      article {
+        header {
+          h3 {
+            display: inline-block;
+            padding-right: 0.5rem;
           }
         }
       }

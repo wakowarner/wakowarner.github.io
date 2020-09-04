@@ -7,14 +7,14 @@
 
     <address>
       <a href="mailto:contacto.rodrigo.patino@gmail.com?subject=Hello There!&amp;body=Hola, Rodrigo. Estaba checando tu CV..."><fa-icon [icon]="faEnvelope"></fa-icon> contacto.rodrigo.patino@gmail.com</a>
-      <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/rodrigo-pati%C3%B1o-38924a186/"><fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn</a>
+      <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/rodrigo-patino-dev/"><fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn</a>
       <a target="_blank" rel="noopener" href="https://twitter.com/akkonomi"><fa-icon [icon]="faTwitter"></fa-icon> Twitter</a>
       <a target="_blank" rel="noopener" href="https://github.com/4k1k0"><fa-icon [icon]="faGithub"></fa-icon> Github</a>
     </address>
 
     <article>
-      <p>Comencé a aprender sobre desarrollo web en la época de MySpace, Fue ahí fue donde aprendí lo básico de HTML, CSS y Javascript. Esta curiosidad me llevo a conocer sobre el software libre y open source, sistemas operativos y lenguajes de programación.</p>
-      <p>En la actualidad he trabajado en diferentes tecnologías y he probado muchas otras con fines académicos. En un futuro quiero trabajar profesionalmente con Golang o Elixir.</p>
+      <p>Soy un desarrollador web autodidacta con poco más de 4 años de experiencia. Comencé a aprender sobre desarrollo web en la época de MySpace; fue entonces cuando aprendí lo básico de HTML, CSS y Javascript. Esta curiosidad me llevo a conocer sobre el software libre y open source, sistemas operativos y lenguajes de programación.</p>
+      <p>En la actualidad he trabajado con diferentes tecnologías y he probado muchas otras con fines académicos. En el futuro me interesa trabajar profesionalmente con Golang o Elixir.</p>
     </article>
   </section>
 
@@ -24,7 +24,7 @@
     </header>
     <ul>
       <li *ngFor="let skill of skills">
-        {{ skill }}
+        {{ skill.nombre }} <span>({{ skill.nivel }})</span>
       </li>
     </ul>
   </section>
@@ -37,12 +37,12 @@
     <article>
       <header>
         <h3>Back-end developer</h3>
-        <h4>Arcsa</h4>
+        <h4>Grupo Arcsa</h4>
         <time datetime="2018-10-01">Abril 2019</time> - Actual
       </header>
       <ul>
         <li>Líder de equipo.</li>
-        <li>Capacitar a miembros del equipo en herramientas como Git o GitHub.</li>
+        <li>Capacitar a miembros del equipo en herramientas como Git y GitHub.</li>
         <li>Dar mantenimiento código legado y reducir deuda técnica.</li>
         <li>Comunicación directa con diferentes equipos administrativos.</li>
         <li>Despliegue de software a entornos de desarrollo y producción.</li>
@@ -50,6 +50,7 @@
         <li>Diseño de API RESTs y bases de datos.</li>
         <li>Escribir documentación.</li>
         <li>Comunicar decisiones del modelo de negocio al equipo de desarrollo.</li>
+        <li>Configuración y administración de servidores GNU/Linux.</li>
       </ul>
       <ul class="keywords">
         <li>Desarrollo de software</li>
@@ -66,17 +67,19 @@
     <article>
       <header>
         <h3>Full-stack developer</h3>
-        <h4>Arcsa</h4>
+        <h4>Grupo Arcsa</h4>
         <time datetime="2018-10-01">Octubre 2018</time> - <time datetime="2019-04-01">Abril 2019</time>
       </header>
       <ul>
         <li>Líder de equipo.</li>
-        <li>Capacitar a miembros del equipo en herramientas como Git o GitHub.</li>
+        <li>Capacitar a miembros del equipo en herramientas como Git y GitHub.</li>
         <li>Mantener proyectos de Angular.</li>
         <li>Añadir funcionalidades a back-end escrito en Javascript.</li>
         <li>Desarrollo de herramientas internas utilizando Angular y Node.js</li>
+        <li>Despliegue de software a entornos de desarrollo y producción.</li>
         <li>Entrevistas técnicas para diseñadores, desarrolladores de aplicaciones móviles y front-end.</li>
         <li>Entrenamiento del equipo de front-end.</li>
+        <li>Configuración y administración de servidores GNU/Linux.</li>
       </ul>
       <ul class="keywords">
         <li>Angular</li>
@@ -141,10 +144,10 @@
 
     <article>
       <ul>
-        <li><span>NES.css</span>Framework CSS con aspecto de videojuegos de la consola Nintendo NES</li>
+        <li><span>Gifsy</span>Script de Bash para crear una animación con efecto de glitch a través de una imagen.</li>
         <li><span>Gin Examples</span>Repositorio oficial de ejemplos del framework Gin.</li>
-        <li><span>Glitch</span>Software escrito en Golang para hacer arte generativo utilizando imágenes.</li>
-        <li><span>Gifsy</span>Script de Bash para hacer arte generativo utiliando una imagen para generar un Gif.</li>
+        <li><span>Glitch</span>Software escrito en Golang para crear arte generativo utilizando imágenes.</li>
+        <li><span>NES.css</span>Framework CSS con aspecto de videojuegos de la consola Nintendo NES.</li>
       </ul>
     </article>
   </section>
@@ -153,12 +156,35 @@
     <header>
       <h2>Voluntariado</h2>
     </header>
+    <article>
+      <header>
+        <h3>Laboratoria</h3>
+        <time datetime="2019-08-01">2019</time> - Actual
+        <h4>Mentor</h4>
+      </header>
+      <p>Realizar entrevistas técnicas de práctica a las estudiantes y apoyarlas con documentación o tips en caso de que lo requieran.</p>
+    </article>
+    <article>
+      <header>
+        <h3>FLISOL</h3>
+        <time datetime="2015-01-01">2014</time> - <time datetime="2018-01-01">2018</time>
+        <h4>Staff</h4>
+      </header>
+      <p>Ser parte del staff de los eventos, realizar instalaciones de sistemas operativos y compartir software libre para sistemas operativos privativos.</p>
+    </article>
+  </section>
+
+  <section id="education">
+    <header>
+      <h2>Educación</h2>
+    </header>
 
     <article>
-      <ul>
-        <li><span>Staff en FLISOL</span>Ser parte del staff de los eventos, realizar instalaciones de sistemas operativos y compartir software libre para sistemas operativos privativos.</li>
-        <li><span>Mentor Laboratoria</span>Realizar entrevistas técnicas de práctica a las estudiantes y apoyarlas con documentación o tips en caso de que lo requieran.</li>
-      </ul>
+      <header>
+        <h3>IPN</h3>
+        <time datetime="2015-08-01">2015</time> - <time datetime="2017-01-01">2017</time>
+        <h4>Ingeniería en computación</h4>
+      </header>
     </article>
   </section>
 

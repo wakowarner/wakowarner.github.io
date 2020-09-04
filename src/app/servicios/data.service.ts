@@ -15,7 +15,7 @@ export class DataService {
     {
       nombre: 'LinkedIn',
       descripcion: 'Rodrigo Patiño',
-      url: 'https://www.linkedin.com/in/rodrigo-pati%C3%B1o-38924a186/'
+      url: 'https://www.linkedin.com/in/rodrigo-patino-dev/'
     },
     {
       nombre: 'Instagram',
