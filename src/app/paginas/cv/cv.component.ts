@@ -4,7 +4,7 @@ import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-ic
 
 interface Skill {
   nombre: string;
-  nivel: "Básico" | "Intermedio" | "Avanzado";
+  nivel: "Básico" | "Intermedio";
 }
 
 @Component({
@@ -21,7 +21,7 @@ export class CvComponent implements OnInit {
     {nombre: "Express", nivel: "Intermedio"},
     {nombre: "Firebase", nivel: "Básico"},
     {nombre: "Git", nivel: "Intermedio"},
-    {nombre: "Javascript", nivel: "Avanzado"},
+    {nombre: "Javascript", nivel: "Intermedio"},
     {nombre: "Linux", nivel: "Intermedio"},
     {nombre: "MongoDB", nivel: "Básico"},
     {nombre: "MySQL", nivel: "Intermedio"},
