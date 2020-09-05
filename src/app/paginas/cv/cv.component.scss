@@ -160,5 +160,28 @@ main {
         }
       }
     }
+    &#languages {
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      & > header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      article {
+        header {
+          h3, h4 {
+            display: inline-block;
+          }
+          h3 {
+            padding-right: 0.25rem;
+            font-size: 1rem;
+            color: $amarillo;
+          }
+          h4 {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
   }
 }
