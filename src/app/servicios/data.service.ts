@@ -29,7 +29,7 @@ export class DataService {
     },
     {
       nombre: 'Age',
-      descripcion: '27'
+      descripcion: '28'
     },
     {
       nombre: 'Editor',
