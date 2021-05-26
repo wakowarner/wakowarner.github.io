@@ -11,6 +11,11 @@ import { AboutComponent } from './paginas/about/about.component';
 import { NotMeComponent } from './paginas/not-me/not-me.component';
 import { CvComponent } from './paginas/cv/cv.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { IntroComponent } from './paginas/cv/components/intro/intro.component';
+import { SkillsComponent } from './paginas/cv/components/skills/skills.component';
+import { ExperienceListComponent } from './paginas/cv/components/experience-list/experience-list.component';
+import { ExperienceItemComponent } from './paginas/cv/components/experience-list/experience-item/experience-item.component';
+import { TagComponent } from './paginas/cv/components/experience-list/tag/tag.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     AboutComponent,
     NotMeComponent,
-    CvComponent
+    CvComponent,
+    IntroComponent,
+    SkillsComponent,
+    ExperienceListComponent,
+    ExperienceItemComponent,
+    TagComponent
   ],
   imports: [
     BrowserModule,
