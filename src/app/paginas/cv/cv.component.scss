@@ -10,7 +10,7 @@ main {
   @media(max-width: 768px) {
     grid-template-columns: 100%;
   }
-  section {
+  app-intro, app-skills, app-experience-list {
     width: 50%;
     border-bottom: 1px solid $verde;
     padding: 0.5rem 0;
@@ -21,6 +21,8 @@ main {
       width: 100%;
       padding: 1rem 0;
     }
+  }
+  section {
     &#about {
       h1, h2, h3 {
         text-align: left;
@@ -76,27 +78,6 @@ main {
         font-size: 1rem;
         padding: 0.5rem 0;
         color: $verde;
-      }
-    }
-    &#skills {
-      ul {
-        display: grid;
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        @media(max-width: 768px) {
-          grid-template-columns: 50% 50%;
-        }
-        li {
-          margin: 0 1rem;
-          list-style-type: none;
-          span {
-            font-size: 0.75rem;
-            @media(max-width: 768px) {
-              width: 100%;
-              display: block;
-              padding: 0.25rem 0;
-            }
-          }
-        }
       }
     }
     &#experience, &#volunteering, &#education {
