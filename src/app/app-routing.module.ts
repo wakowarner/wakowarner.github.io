@@ -6,10 +6,10 @@ import { CvComponent } from './paginas/cv/cv.component';
 
 
 const routes: Routes = [
-  {path: '', component: AboutComponent},
-  {path: 'not-me', component: NotMeComponent},
-  {path: 'cv', component: CvComponent},
-  {path: '**', redirectTo: ''}
+  { path: '', component: AboutComponent },
+  { path: 'not-me', component: NotMeComponent },
+  { path: 'cv', component: CvComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

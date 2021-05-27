@@ -1,5 +1,5 @@
-import {Injectable} from '@angular/core';
-import {Social, SocialLinks} from '../models/social.model';
+import { Injectable } from '@angular/core';
+import { Social, SocialLinks } from '../models/social.model';
 
 @Injectable({
   providedIn: 'root'

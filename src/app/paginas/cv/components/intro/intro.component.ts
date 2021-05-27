@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
-import {SocialLinks} from "../../../../models/social.model";
+import { SocialLinks } from '../../../../models/social.model';
 
 @Component({
   selector: 'app-intro',
