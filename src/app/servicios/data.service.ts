@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Social } from '../models/social.model';
+import {Injectable} from '@angular/core';
+import {Social, SocialLinks} from '../models/social.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,22 +10,22 @@ export class DataService {
     {
       nombre: 'Twitter',
       descripcion: '@akkonomi',
-      url: 'https://twitter.com/akkonomi'
+      url: SocialLinks.Twitter
     },
     {
       nombre: 'LinkedIn',
       descripcion: 'Rodrigo Patiño',
-      url: 'https://www.linkedin.com/in/rodrigo-patino-dev/'
+      url: SocialLinks.Linkedin
     },
     {
       nombre: 'Instagram',
       descripcion: '@haskellcatalv',
-      url: 'https://www.instagram.com/haskellcatalv'
+      url: SocialLinks.Instagram
     },
     {
       nombre: 'GitHub',
       descripcion: '@4k1k0',
-      url: 'https://github.com/4k1k0'
+      url: SocialLinks.Github
     },
     {
       nombre: 'Age',
@@ -45,12 +45,12 @@ export class DataService {
     }, {
       nombre: 'Redbubble',
       descripcion: '4k1k0-zyx',
-      url: 'https://www.redbubble.com/es/people/4k1k0-zyx/shop'
+      url: SocialLinks.RedBubble
     },
     {
       nombre: 'Last.fm',
       descripcion: 'wakogitmu',
-      url: 'https://www.last.fm/user/wakogitmu'
+      url: SocialLinks.LastFM
     },
     {
       nombre: 'PSN',

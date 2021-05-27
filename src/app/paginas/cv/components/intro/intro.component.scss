@@ -1,0 +1,61 @@
+$verde: #60b48a;
+$amarillo: #f0dfaf;
+
+section {
+  border-bottom: 1px solid $verde;
+  padding: 0.5rem 0;
+  &:first-child, &:last-child {
+    border-bottom: none;
+  }
+  @media(max-width: 768px) {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  &#about {
+    h1, h2, h3 {
+      text-align: left;
+    }
+    h1 {
+      color: $amarillo;
+      font-size: 2rem;
+
+    }
+    address, article {
+      margin-top: 1rem;
+    }
+    address {
+      @media(max-width: 768px) {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+      }
+      a {
+        padding: 0.25rem 0.5rem;
+        @media(max-width: 768px) {
+          font-size: 0.9rem;
+          text-align: center;
+          padding: 0.25rem 0;
+          &:first-child {
+            grid-column-start: 1;
+            grid-column-end: 4;
+          }
+        }
+        fa-icon {
+          color: #fff;
+          @media(max-width: 768px) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    article {
+      background: $verde;
+      padding: 1rem 0.5rem;
+      p {
+        margin-bottom: 0.5rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
